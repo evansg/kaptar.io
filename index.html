@@ -3,900 +3,187 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kaptar — Cold Chain Datalogger for Fruit Container Transport</title>
-  <meta name="description" content="Single-use USB temperature logger for fruit containers. No software needed. Plug in, read the PDF. Hardware-secured, tamper-proof. European quality.">
-  <meta name="keywords" content="cold chain data logger, single use temperature logger, fruit container temperature monitoring, USB temperature logger no software">
-  <meta name="robots" content="index, follow">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Kaptar — Cold Chain Datalogger for Fruit Container Transport">
-  <meta property="og:description" content="Single-use USB temperature logger for fruit containers. No software needed. Plug in, read the PDF. Hardware-secured, tamper-proof. European quality.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://kaptar.io">
-  <meta property="og:image" content="https://kaptar.io/assets/images/og-image.jpg">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Kaptar — Cold Chain Datalogger for Fruit Container Transport">
-  <meta name="twitter:description" content="Single-use USB temperature logger for fruit containers. No software needed. Plug in, read the PDF.">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
-
+  <title>Kaptar — Cold Chain Datalogger</title>
+  <meta name="description" content="Single-use USB temperature logger for fruit containers. No software needed. Plug in, read the PDF. Hardware-secured, tamper-proof.">
+  
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
   <!-- Styles -->
   <link rel="stylesheet" href="css/styles.css">
-
-  <!-- Schema Markup -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Kaptar Technologies",
-    "url": "https://kaptar.io",
-    "logo": "https://kaptar.io/assets/icons/kaptar-logo.svg",
-    "description": "Cold chain monitoring solutions for fruit container transport",
-    "parentOrganization": {
-      "@type": "Organization",
-      "name": "Greenkeeper Iberia"
-    },
-    "sameAs": []
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "name": "Kaptar Cold Chain Datalogger",
-    "description": "Single-use USB temperature and humidity logger for fruit container transport. No software required.",
-    "brand": {
-      "@type": "Brand",
-      "name": "Kaptar"
-    },
-    "manufacturer": {
-      "@type": "Organization",
-      "name": "Kaptar Technologies"
-    },
-    "category": "Cold Chain Monitoring Equipment",
-    "offers": {
-      "@type": "AggregateOffer",
-      "priceCurrency": "EUR",
-      "availability": "https://schema.org/InStock",
-      "offerCount": "3"
-    }
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://kaptar.io"
-      }
-    ]
-  }
-  </script>
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
 </head>
 <body>
 
-  <!-- ========== 1. STICKY NAVIGATION ========== -->
-  <header class="nav" id="nav">
+  <!-- Navigation -->
+  <nav class="nav">
     <div class="nav__container">
-      <a href="#" class="nav__logo" aria-label="Kaptar Home">
-        <svg class="nav__logo-icon" viewBox="0 0 140 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="16" cy="16" r="14" fill="#0D9488"/>
-          <path d="M10 10 L16 16 L10 22" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M16 16 L22 10" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-          <text x="38" y="23" font-family="Inter, sans-serif" font-weight="700" font-size="20" fill="#1D1D1F">kaptar</text>
-        </svg>
+      <a href="#" class="nav__logo">
+        <span class="nav__logo-icon"></span>
+        Kaptar
       </a>
+      <div class="nav__links">
+        <a href="#product">Product</a>
+        <a href="#features">Features</a>
+        <a href="#specs">Specs</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <a href="#contact" class="btn btn--sm btn--primary">Request Samples</a>
+    </div>
+  </nav>
 
-      <nav class="nav__links" id="navLinks" aria-label="Main navigation">
-        <a href="#product" class="nav__link">Product</a>
-        <a href="#technology" class="nav__link">Technology</a>
-        <a href="#ecosystem" class="nav__link">Ecosystem</a>
-        <a href="#pricing" class="nav__link">Pricing</a>
-        <a href="#contact" class="nav__link">Contact</a>
-      </nav>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero__content">
+      <h1 class="hero__title">KAPTAR</h1>
+      <p class="hero__subtitle">The cold chain datalogger with hardware-grade security.<br>Plug and play. No software required.</p>
+      
+      <div class="hero__visual">
+        <div class="hero__visual-placeholder">
+          <!-- Placeholder for render_hero_front.png -->
+          <div class="placeholder-label">Hero Render (Front View)</div>
+        </div>
+      </div>
 
-      <a href="#contact" class="btn btn--primary nav__cta">Request Samples</a>
-
-      <button class="nav__hamburger" id="navHamburger" aria-label="Toggle menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <a href="#contact" class="btn btn--lg btn--primary">Request Samples</a>
     </div>
   </header>
 
-  <!-- Mobile menu overlay -->
-  <div class="mobile-menu" id="mobileMenu">
-    <nav class="mobile-menu__nav">
-      <a href="#product" class="mobile-menu__link">Product</a>
-      <a href="#technology" class="mobile-menu__link">Technology</a>
-      <a href="#ecosystem" class="mobile-menu__link">Ecosystem</a>
-      <a href="#pricing" class="mobile-menu__link">Pricing</a>
-      <a href="#contact" class="mobile-menu__link">Contact</a>
-      <a href="#contact" class="btn btn--primary mobile-menu__cta">Request Samples</a>
-    </nav>
-  </div>
-
-  <main>
-    <!-- ========== 2. HERO SECTION ========== -->
-    <section class="hero" id="hero">
-      <div class="container hero__container">
-        <div class="hero__content">
-          <h1 class="hero__title">Cold Chain Monitoring Built for Fruit Transport</h1>
-          <p class="hero__subtitle">The Kaptar datalogger records every temperature event during container transit. Plug it into any USB port&mdash;even your phone. Instant PDF report. No software. No cloud login.</p>
-          <div class="hero__ctas">
-            <a href="#contact" class="btn btn--primary btn--lg">Request Samples</a>
-            <a href="#how-it-works" class="btn btn--ghost btn--lg">See How It Works</a>
-          </div>
-          <div class="hero__badges">
-            <div class="badge">
-              <svg class="badge__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z"/><path d="M9 12l2 2 4-4"/></svg>
-              <span>CE Certified</span>
-            </div>
-            <div class="badge">
-              <svg class="badge__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 4 10 15 15 0 0 1-4 10 15 15 0 0 1-4-10A15 15 0 0 1 12 2z"/></svg>
-              <span>Made in Europe</span>
-            </div>
-            <div class="badge">
-              <svg class="badge__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              <span>60/90/120 Day Variants</span>
-            </div>
-          </div>
-        </div>
-        <div class="hero__image">
-          <div class="hero__product-visual">
-            <!-- Product device illustration -->
-            <svg viewBox="0 0 400 500" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero__device-svg">
-              <!-- Device body -->
-              <rect x="100" y="40" width="200" height="380" rx="20" fill="#F5F5F7" stroke="#E5E5E7" stroke-width="2"/>
-              <!-- Screen area -->
-              <rect x="120" y="80" width="160" height="100" rx="10" fill="#1D1D1F"/>
-              <!-- KAPTAR text on screen -->
-              <text x="200" y="125" text-anchor="middle" font-family="Inter, sans-serif" font-weight="700" font-size="18" fill="#0D9488">KAPTAR</text>
-              <text x="200" y="150" text-anchor="middle" font-family="Inter, sans-serif" font-weight="400" font-size="11" fill="#6E6E73">COLD CHAIN LOGGER</text>
-              <!-- LEDs -->
-              <circle cx="160" cy="210" r="8" fill="#22C55E" opacity="0.9"/>
-              <circle cx="200" cy="210" r="8" fill="#EF4444" opacity="0.3"/>
-              <circle cx="240" cy="210" r="8" fill="#3B82F6" opacity="0.3"/>
-              <!-- LED labels -->
-              <text x="160" y="235" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#6E6E73">OK</text>
-              <text x="200" y="235" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#6E6E73">ALERT</text>
-              <text x="240" y="235" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#6E6E73">COLD</text>
-              <!-- START button -->
-              <circle cx="200" cy="290" r="30" fill="#0D9488" stroke="#0F766E" stroke-width="2"/>
-              <text x="200" y="295" text-anchor="middle" font-family="Inter, sans-serif" font-weight="700" font-size="12" fill="#FFFFFF">START</text>
-              <!-- USB connector -->
-              <rect x="170" y="400" width="60" height="30" rx="4" fill="#C4C4C4" stroke="#A0A0A0" stroke-width="1.5"/>
-              <rect x="180" y="408" width="40" height="14" rx="2" fill="#888"/>
-              <text x="200" y="450" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#6E6E73">USB-A</text>
-              <!-- Glow effect -->
-              <circle cx="200" cy="290" r="40" fill="#0D9488" opacity="0.1"/>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== 3. PROBLEM STATEMENT ========== -->
-    <section class="section section--alt" id="challenge">
-      <div class="container">
-        <div class="section__header reveal">
-          <p class="section__eyebrow">The Challenge</p>
-          <h2 class="section__title">Every Year, 40% of Fresh Produce Never Reaches the Consumer</h2>
-          <p class="section__subtitle">Temperature excursions during sea transport are the leading cause of fruit rejection at destination ports. Billions of dollars in produce are lost annually because cold chains break&mdash;and nobody knows until it's too late.</p>
-        </div>
-        <div class="stats reveal">
-          <div class="stat-card">
-            <span class="stat-card__number" data-target="14" data-prefix="$" data-suffix="B+">$0</span>
-            <span class="stat-card__label">Annual losses from temperature breaks</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-card__number" data-target="40" data-suffix="%">0</span>
-            <span class="stat-card__label">Post-harvest fruit waste globally</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-card__number" data-target="30" data-suffix="+ days">0</span>
-            <span class="stat-card__label">Average sea container transit time</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== 4. PRODUCT SHOWCASE ========== -->
-    <section class="section" id="product">
-      <div class="container">
-        <div class="section__header reveal">
-          <p class="section__eyebrow">Product</p>
-          <h2 class="section__title">Meet Kaptar. One Button. One USB. One Report.</h2>
-        </div>
-
-        <div class="product-showcase reveal">
-          <div class="product-showcase__image">
-            <svg viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg" class="product-showcase__svg">
-              <!-- Simplified front view of device -->
-              <rect x="200" y="20" width="200" height="340" rx="18" fill="#F5F5F7" stroke="#E5E5E7" stroke-width="2"/>
-              <rect x="218" y="50" width="164" height="90" rx="8" fill="#1D1D1F"/>
-              <text x="300" y="90" text-anchor="middle" font-family="Inter, sans-serif" font-weight="700" font-size="16" fill="#0D9488">KAPTAR</text>
-              <text x="300" y="115" text-anchor="middle" font-family="Inter, sans-serif" font-weight="400" font-size="10" fill="#6E6E73">COLD CHAIN LOGGER</text>
-              <circle cx="265" cy="170" r="6" fill="#22C55E"/>
-              <circle cx="300" cy="170" r="6" fill="#EF4444" opacity="0.3"/>
-              <circle cx="335" cy="170" r="6" fill="#3B82F6" opacity="0.3"/>
-              <circle cx="300" cy="240" r="28" fill="#0D9488"/>
-              <text x="300" y="245" text-anchor="middle" font-family="Inter, sans-serif" font-weight="700" font-size="11" fill="#fff">START</text>
-              <rect x="275" y="340" width="50" height="28" rx="4" fill="#C4C4C4"/>
-              <rect x="283" y="347" width="34" height="14" rx="2" fill="#888"/>
-            </svg>
-          </div>
-        </div>
-
-        <div class="product-variants reveal">
-          <div class="variant-card">
-            <div class="variant-card__badge">V1</div>
-            <h3 class="variant-card__title">Temperature Logger</h3>
-            <p class="variant-card__desc">Precision temperature recording for standard cold chain monitoring.</p>
-            <ul class="variant-card__specs">
-              <li>Temperature sensing</li>
-              <li>60/90/120-day variants</li>
-              <li>USB PDF report</li>
-              <li>CSV data export</li>
-            </ul>
-          </div>
-          <div class="variant-card variant-card--featured">
-            <div class="variant-card__badge">V2</div>
-            <h3 class="variant-card__title">Temp + Humidity Logger</h3>
-            <p class="variant-card__desc">Complete environmental monitoring for moisture-sensitive produce.</p>
-            <ul class="variant-card__specs">
-              <li>Temperature + humidity</li>
-              <li>60/90/120-day variants</li>
-              <li>USB PDF report</li>
-              <li>CSV data export</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="spec-highlights reveal">
-          <div class="spec-highlight">
-            <div class="spec-highlight__icon">
-              <svg viewBox="0 0 48 48" fill="none" stroke="#0D9488" stroke-width="2.5">
-                <rect x="14" y="8" width="20" height="32" rx="3"/>
-                <rect x="18" y="34" width="12" height="6" rx="1.5" fill="#0D9488" opacity="0.2"/>
-                <line x1="20" y1="37" x2="28" y2="37"/>
-              </svg>
-            </div>
-            <h4 class="spec-highlight__title">Universal USB</h4>
-            <p class="spec-highlight__desc">Works on any device with a USB port&mdash;including phones via OTG adapter</p>
-          </div>
-          <div class="spec-highlight">
-            <div class="spec-highlight__icon">
-              <svg viewBox="0 0 48 48" fill="none" stroke="#0D9488" stroke-width="2.5">
-                <circle cx="24" cy="24" r="16"/>
-                <polyline points="24 14 24 24 32 28"/>
-              </svg>
-            </div>
-            <h4 class="spec-highlight__title">60/90/120 Days</h4>
-            <p class="spec-highlight__desc">Choose the variant that matches your shipping route duration</p>
-          </div>
-          <div class="spec-highlight">
-            <div class="spec-highlight__icon">
-              <svg viewBox="0 0 48 48" fill="none" stroke="#0D9488" stroke-width="2.5">
-                <path d="M24 6v4M24 38v4M6 24h4M38 24h4"/>
-                <circle cx="24" cy="24" r="8"/>
-                <path d="M14 14l2.8 2.8M31.2 31.2L34 34M14 34l2.8-2.8M31.2 16.8L34 14"/>
-              </svg>
-            </div>
-            <h4 class="spec-highlight__title">Ultra-Low Power</h4>
-            <p class="spec-highlight__desc">STOP2 deep sleep at &lt;1&mu;A with sensor power gating for guaranteed battery life</p>
-          </div>
-          <div class="spec-highlight">
-            <div class="spec-highlight__icon">
-              <svg viewBox="0 0 48 48" fill="none" stroke="#0D9488" stroke-width="2.5">
-                <path d="M24 4L6 14v12c0 11.1 7.68 21.48 18 24 10.32-2.52 18-12.9 18-24V14L24 4z"/>
-                <polyline points="17 24 22 29 31 20"/>
-              </svg>
-            </div>
-            <h4 class="spec-highlight__title">Hardware Protected</h4>
-            <p class="spec-highlight__desc">STM32 Firewall, OTP serials, read-only filesystem prevent tampering</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== 5. KEY FEATURES ========== -->
-    <section class="section section--alt" id="features">
-      <div class="container">
-        <div class="section__header reveal">
-          <p class="section__eyebrow">Features</p>
-          <h2 class="section__title">Why Kaptar</h2>
-        </div>
-        <div class="features-grid reveal">
-          <div class="feature-card">
-            <div class="feature-card__icon">
-              <svg viewBox="0 0 48 48" fill="none" stroke="#0D9488" stroke-width="2">
-                <rect x="8" y="6" width="32" height="24" rx="3"/>
-                <line x1="8" y1="30" x2="40" y2="30"/>
-                <line x1="24" y1="30" x2="24" y2="38"/>
-                <line x1="16" y1="38" x2="32" y2="38"/>
-                <path d="M18 18l4 4 8-8" stroke-width="2.5"/>
-              </svg>
-            </div>
-            <h3 class="feature-card__title">No Software Required</h3>
-            <p class="feature-card__desc">USB mass storage device works on any computer, tablet, or phone via OTG. No drivers, no apps, no cloud accounts.</p>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-card__icon">
-              <svg viewBox="0 0 48 48" fill="none" stroke="#0D9488" stroke-width="2">
-                <circle cx="24" cy="28" r="14"/>
-                <line x1="24" y1="20" x2="24" y2="28"/>
-                <line x1="24" y1="28" x2="30" y2="32"/>
-                <path d="M16 8h16" stroke-width="2.5"/>
-                <line x1="24" y1="4" x2="24" y2="8"/>
-              </svg>
-            </div>
-            <h3 class="feature-card__title">Precision Sensing</h3>
-            <p class="feature-card__desc">External 2.048V precision voltage reference delivers laboratory-grade accuracy across the full operating temperature range.</p>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-card__icon">
-              <svg viewBox="0 0 48 48" fill="none" stroke="#0D9488" stroke-width="2">
-                <circle cx="24" cy="24" r="16"/>
-                <circle cx="24" cy="24" r="6" fill="#0D9488" opacity="0.15"/>
-                <path d="M24 24v-10" stroke-width="3" stroke-linecap="round"/>
-              </svg>
-            </div>
-            <h3 class="feature-card__title">One-Button Operation</h3>
-            <p class="feature-card__desc">Press START. That's it. Green LED confirms activation. Red LED for high-temp alerts. Blue LED for low-temp alerts. Instant visual status.</p>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-card__icon">
-              <svg viewBox="0 0 48 48" fill="none" stroke="#0D9488" stroke-width="2">
-                <path d="M24 4L6 14v12c0 11.1 7.68 21.48 18 24 10.32-2.52 18-12.9 18-24V14L24 4z"/>
-                <path d="M16 24h16M16 18h16M16 30h16" stroke-dasharray="2 3"/>
-              </svg>
-            </div>
-            <h3 class="feature-card__title">Tamper-Proof Data</h3>
-            <p class="feature-card__desc">Read-only filesystem, one-time-programmable serials, STM32 Firewall, and flash write protection ensure data integrity.</p>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-card__icon">
-              <svg viewBox="0 0 48 48" fill="none" stroke="#0D9488" stroke-width="2">
-                <rect x="8" y="12" width="32" height="24" rx="3"/>
-                <circle cx="24" cy="24" r="6"/>
-                <path d="M24 18v-6M36 24h6M24 30v6M12 24H6" stroke-dasharray="2 2"/>
-                <polyline points="22 24 24 26 28 22"/>
-              </svg>
-            </div>
-            <h3 class="feature-card__title">Safe Mode Backup</h3>
-            <p class="feature-card__desc">Automatically logs temperature in a 4-month rolling loop from factory activation&mdash;even if nobody presses START.</p>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-card__icon">
-              <svg viewBox="0 0 48 48" fill="none" stroke="#0D9488" stroke-width="2">
-                <circle cx="24" cy="20" r="6"/>
-                <path d="M12 42c0-8 5.4-12 12-12s12 4 12 12"/>
-                <path d="M36 14l4-4M40 14l-4-4"/>
-                <rect x="34" y="4" width="12" height="8" rx="2" stroke-width="1.5"/>
-                <text x="40" y="10.5" text-anchor="middle" font-family="Inter" font-size="5" fill="#0D9488" stroke="none">EU</text>
-              </svg>
-            </div>
-            <h3 class="feature-card__title">European Quality</h3>
-            <p class="feature-card__desc">CE certified, designed in Spain with CSIC scientific heritage. Part of the Greenkeeper Iberia family, 35+ years in fruit transport science.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== 6. HOW IT WORKS ========== -->
-    <section class="section" id="how-it-works">
-      <div class="container">
-        <div class="section__header reveal">
-          <p class="section__eyebrow">How It Works</p>
-          <h2 class="section__title">From Activation to Insight in 4 Simple Steps</h2>
-        </div>
-        <div class="steps reveal">
-          <div class="step">
-            <div class="step__number">1</div>
-            <div class="step__icon">
-              <svg viewBox="0 0 64 64" fill="none" stroke="#0D9488" stroke-width="2">
-                <circle cx="32" cy="32" r="20"/>
-                <circle cx="32" cy="32" r="8" fill="#0D9488" opacity="0.2"/>
-                <path d="M32 24v8" stroke-width="3" stroke-linecap="round"/>
-                <circle cx="32" cy="32" r="3" fill="#22C55E"/>
-              </svg>
-            </div>
-            <h3 class="step__title">Activate</h3>
-            <p class="step__desc">Press START. The green LED confirms the logger is recording.</p>
-          </div>
-          <div class="step__connector" aria-hidden="true">
-            <svg viewBox="0 0 80 24" fill="none"><path d="M0 12h72M64 4l8 8-8 8" stroke="#0D9488" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="step">
-            <div class="step__number">2</div>
-            <div class="step__icon">
-              <svg viewBox="0 0 64 64" fill="none" stroke="#0D9488" stroke-width="2">
-                <rect x="12" y="20" width="40" height="28" rx="3"/>
-                <line x1="12" y1="28" x2="52" y2="28"/>
-                <rect x="16" y="32" width="8" height="8" rx="1" fill="#0D9488" opacity="0.2"/>
-                <rect x="28" y="32" width="8" height="8" rx="1" fill="#0D9488" opacity="0.2"/>
-                <rect x="40" y="32" width="8" height="8" rx="1" fill="#0D9488" opacity="0.2"/>
-                <path d="M8 16h48" stroke-dasharray="4 4"/>
-              </svg>
-            </div>
-            <h3 class="step__title">Ship</h3>
-            <p class="step__desc">Place in container. Kaptar logs temperature at your configured interval for the entire journey.</p>
-          </div>
-          <div class="step__connector" aria-hidden="true">
-            <svg viewBox="0 0 80 24" fill="none"><path d="M0 12h72M64 4l8 8-8 8" stroke="#0D9488" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="step">
-            <div class="step__number">3</div>
-            <div class="step__icon">
-              <svg viewBox="0 0 64 64" fill="none" stroke="#0D9488" stroke-width="2">
-                <rect x="16" y="10" width="24" height="44" rx="3"/>
-                <rect x="36" y="26" width="16" height="10" rx="2" fill="#C4C4C4" stroke="#A0A0A0"/>
-                <line x1="40" y1="31" x2="48" y2="31" stroke="#888"/>
-                <circle cx="28" cy="20" r="2" fill="#22C55E"/>
-                <rect x="22" y="28" width="12" height="8" rx="1" fill="#1D1D1F" opacity="0.1"/>
-              </svg>
-            </div>
-            <h3 class="step__title">Connect</h3>
-            <p class="step__desc">Plug into any USB port. Kaptar appears as a standard drive. No drivers needed.</p>
-          </div>
-          <div class="step__connector" aria-hidden="true">
-            <svg viewBox="0 0 80 24" fill="none"><path d="M0 12h72M64 4l8 8-8 8" stroke="#0D9488" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <div class="step">
-            <div class="step__number">4</div>
-            <div class="step__icon">
-              <svg viewBox="0 0 64 64" fill="none" stroke="#0D9488" stroke-width="2">
-                <rect x="12" y="8" width="40" height="48" rx="3"/>
-                <text x="32" y="22" text-anchor="middle" font-family="Inter" font-weight="700" font-size="7" fill="#EF4444" stroke="none">PDF</text>
-                <line x1="20" y1="30" x2="44" y2="30"/>
-                <line x1="20" y1="36" x2="44" y2="36"/>
-                <line x1="20" y1="42" x2="36" y2="42"/>
-                <polyline points="20 48 28 44 36 50 44 46" stroke="#0D9488" stroke-width="1.5" fill="none"/>
-              </svg>
-            </div>
-            <h3 class="step__title">Read</h3>
-            <p class="step__desc">Open REPORT.PDF for the complete temperature history, alerts, and CSV data export.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== 7. TECHNOLOGY & SECURITY ========== -->
-    <section class="section section--alt" id="technology">
-      <div class="container">
-        <div class="section__header reveal">
-          <p class="section__eyebrow">Technology</p>
-          <h2 class="section__title">Built to Be Trusted</h2>
-        </div>
-        <div class="tech-grid reveal">
-          <div class="tech-content">
-            <div class="tech-item">
-              <div class="tech-item__icon">
-                <svg viewBox="0 0 32 32" fill="none" stroke="#0D9488" stroke-width="2">
-                  <path d="M16 2L4 8v8c0 7.4 5.12 14.32 12 16 6.88-1.68 12-8.6 12-16V8L16 2z"/>
-                  <path d="M10 16h12M10 12h12M10 20h12" stroke-width="1.5"/>
-                </svg>
-              </div>
-              <div>
-                <h3 class="tech-item__title">Hardware Security</h3>
-                <p class="tech-item__desc">Multi-layer protection: ESD guards, overvoltage protection, hardware fuse, and STM32 Firewall isolate critical firmware from the USB interface.</p>
-              </div>
-            </div>
-            <div class="tech-item">
-              <div class="tech-item__icon">
-                <svg viewBox="0 0 32 32" fill="none" stroke="#0D9488" stroke-width="2">
-                  <rect x="4" y="8" width="24" height="16" rx="2"/>
-                  <path d="M12 14l3 3 5-5"/>
-                  <line x1="4" y1="28" x2="28" y2="28" stroke-dasharray="3 3"/>
-                </svg>
-              </div>
-              <div>
-                <h3 class="tech-item__title">Data Integrity</h3>
-                <p class="tech-item__desc">Read-only filesystem prevents modification. One-time-programmable serial numbers and flash write protection make records legally defensible.</p>
-              </div>
-            </div>
-            <div class="tech-item">
-              <div class="tech-item__icon">
-                <svg viewBox="0 0 32 32" fill="none" stroke="#0D9488" stroke-width="2">
-                  <circle cx="16" cy="16" r="12"/>
-                  <circle cx="16" cy="16" r="4" fill="#0D9488" opacity="0.2"/>
-                  <path d="M16 4v4M16 24v4M4 16h4M24 16h4"/>
-                </svg>
-              </div>
-              <div>
-                <h3 class="tech-item__title">Precision Engineering</h3>
-                <p class="tech-item__desc">External 2.048V reference provides laboratory-grade ADC accuracy. This is the approach used in professional measurement instruments&mdash;not consumer shortcuts.</p>
-              </div>
-            </div>
-            <div class="tech-item">
-              <div class="tech-item__icon">
-                <svg viewBox="0 0 32 32" fill="none" stroke="#0D9488" stroke-width="2">
-                  <path d="M20 6l-2 6h8l-10 14 2-8H10L18 4"/>
-                </svg>
-              </div>
-              <div>
-                <h3 class="tech-item__title">Power Intelligence</h3>
-                <p class="tech-item__desc">STOP2 deep sleep draws less than 1&mu;A. Sensor power gating activates hardware only during measurements. Result: guaranteed 120-day operation on a coin cell.</p>
-              </div>
-            </div>
-          </div>
-          <div class="tech-visual">
-            <svg viewBox="0 0 400 500" fill="none" xmlns="http://www.w3.org/2000/svg" class="tech-diagram">
-              <!-- Stylized device cross-section / diagram -->
-              <rect x="100" y="30" width="200" height="380" rx="20" fill="#F5F5F7" stroke="#E5E5E7" stroke-width="1.5"/>
-              <!-- MCU block -->
-              <rect x="140" y="100" width="120" height="60" rx="6" fill="#fff" stroke="#0D9488" stroke-width="1.5"/>
-              <text x="200" y="125" text-anchor="middle" font-family="Inter" font-weight="600" font-size="10" fill="#0D9488">STM32 MCU</text>
-              <text x="200" y="140" text-anchor="middle" font-family="Inter" font-size="8" fill="#6E6E73">Firewall Protected</text>
-              <!-- Sensor block -->
-              <rect x="140" y="180" width="120" height="40" rx="6" fill="#fff" stroke="#0D9488" stroke-width="1.5"/>
-              <text x="200" y="204" text-anchor="middle" font-family="Inter" font-weight="600" font-size="10" fill="#0D9488">Temp/RH Sensor</text>
-              <!-- VREF block -->
-              <rect x="140" y="240" width="120" height="40" rx="6" fill="#fff" stroke="#0D9488" stroke-width="1.5"/>
-              <text x="200" y="264" text-anchor="middle" font-family="Inter" font-weight="600" font-size="10" fill="#0D9488">2.048V VREF</text>
-              <!-- Flash block -->
-              <rect x="140" y="300" width="120" height="40" rx="6" fill="#fff" stroke="#0D9488" stroke-width="1.5"/>
-              <text x="200" y="324" text-anchor="middle" font-family="Inter" font-weight="600" font-size="10" fill="#0D9488">Flash (Read-Only)</text>
-              <!-- USB block -->
-              <rect x="160" y="370" width="80" height="30" rx="4" fill="#fff" stroke="#6E6E73" stroke-width="1.5"/>
-              <text x="200" y="389" text-anchor="middle" font-family="Inter" font-weight="600" font-size="9" fill="#6E6E73">USB-A</text>
-              <!-- Connection lines -->
-              <line x1="200" y1="160" x2="200" y2="180" stroke="#0D9488" stroke-width="1" stroke-dasharray="4 2"/>
-              <line x1="200" y1="220" x2="200" y2="240" stroke="#0D9488" stroke-width="1" stroke-dasharray="4 2"/>
-              <line x1="200" y1="280" x2="200" y2="300" stroke="#0D9488" stroke-width="1" stroke-dasharray="4 2"/>
-              <line x1="200" y1="340" x2="200" y2="370" stroke="#6E6E73" stroke-width="1" stroke-dasharray="4 2"/>
-              <!-- Shield outline -->
-              <path d="M200 50L130 75v50c0 35 30 68 70 76 40-8 70-41 70-76V75L200 50z" fill="none" stroke="#0D9488" stroke-width="1" stroke-dasharray="6 4" opacity="0.4"/>
-              <!-- Battery -->
-              <rect x="310" y="180" width="40" height="20" rx="3" fill="none" stroke="#6E6E73" stroke-width="1.5"/>
-              <rect x="350" y="186" width="4" height="8" rx="1" fill="#6E6E73"/>
-              <text x="330" y="208" text-anchor="middle" font-family="Inter" font-size="7" fill="#6E6E73">CR2032</text>
-              <text x="330" y="218" text-anchor="middle" font-family="Inter" font-size="7" fill="#6E6E73">&lt;1μA sleep</text>
-              <line x1="310" y1="190" x2="260" y2="130" stroke="#6E6E73" stroke-width="0.75" stroke-dasharray="3 3"/>
-              <!-- ESD label -->
-              <rect x="50" y="360" width="40" height="20" rx="3" fill="none" stroke="#EF4444" stroke-width="1" opacity="0.6"/>
-              <text x="70" y="374" text-anchor="middle" font-family="Inter" font-weight="600" font-size="7" fill="#EF4444">ESD</text>
-              <line x1="90" y1="370" x2="160" y2="385" stroke="#EF4444" stroke-width="0.75" stroke-dasharray="3 3" opacity="0.6"/>
-            </svg>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== 8. SAFE MODE SPOTLIGHT ========== -->
-    <section class="section safe-mode" id="safe-mode">
-      <div class="container">
-        <div class="safe-mode__content reveal">
-          <div class="safe-mode__icon">
-            <svg viewBox="0 0 80 80" fill="none" stroke="#0D9488" stroke-width="2.5">
-              <circle cx="40" cy="40" r="32"/>
-              <path d="M40 20v20l12 8"/>
-              <circle cx="40" cy="40" r="8" fill="#0D9488" opacity="0.15"/>
-              <path d="M20 56a24 24 0 0 1 0-32" stroke="#22C55E" stroke-width="3" stroke-linecap="round"/>
-              <path d="M60 24a24 24 0 0 1 0 32" stroke="#22C55E" stroke-width="3" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <p class="section__eyebrow">Your Safety Net</p>
-          <h2 class="section__title">Even If Nobody Presses START, Kaptar Has You Covered</h2>
-          <p class="safe-mode__desc">From the moment Kaptar leaves the factory, Safe Mode begins logging temperature in a 4-month rolling buffer. If a shipment starts without manual activation, you still get the data. No other single-use logger on the market offers this level of protection.</p>
-          <div class="safe-mode__highlights">
-            <div class="safe-mode__highlight">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>Automatic from factory activation</span>
-            </div>
-            <div class="safe-mode__highlight">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>4-month rolling data buffer</span>
-            </div>
-            <div class="safe-mode__highlight">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>Industry-exclusive feature</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== 9. ECOSYSTEM ========== -->
-    <section class="section section--alt" id="ecosystem">
-      <div class="container">
-        <div class="section__header reveal">
-          <p class="section__eyebrow">Ecosystem</p>
-          <h2 class="section__title">Complete Fruit Protection</h2>
-          <p class="section__subtitle">The only company offering monitoring + ethylene control + moisture management as an integrated ecosystem.</p>
-        </div>
-        <div class="ecosystem-grid reveal">
-          <div class="ecosystem-card">
-            <div class="ecosystem-card__icon">
-              <svg viewBox="0 0 64 64" fill="none" stroke="#0D9488" stroke-width="2">
-                <rect x="16" y="8" width="32" height="48" rx="6"/>
-                <circle cx="32" cy="28" r="6"/>
-                <line x1="32" y1="22" x2="32" y2="28"/>
-                <line x1="28" y1="40" x2="36" y2="40"/>
-                <line x1="28" y1="44" x2="36" y2="44"/>
-              </svg>
-            </div>
-            <div class="ecosystem-card__step">Monitor</div>
-            <h3 class="ecosystem-card__title">Kaptar Datalogger</h3>
-            <p class="ecosystem-card__desc">Temperature and humidity logging throughout the entire cold chain journey. Tamper-proof records accessible via USB.</p>
-          </div>
-          <div class="ecosystem-card">
-            <div class="ecosystem-card__icon">
-              <svg viewBox="0 0 64 64" fill="none" stroke="#22C55E" stroke-width="2">
-                <ellipse cx="32" cy="36" rx="20" ry="16"/>
-                <path d="M24 36c0-8 8-20 8-20s8 12 8 20"/>
-                <path d="M32 28v16"/>
-                <path d="M26 38l6-4 6 4"/>
-              </svg>
-            </div>
-            <div class="ecosystem-card__step">Protect</div>
-            <h3 class="ecosystem-card__title">Ethylene Absorbers</h3>
-            <p class="ecosystem-card__desc">GreenKeeper's world-leading ethylene absorption technology slows ripening and extends shelf life during long-haul transport.</p>
-          </div>
-          <div class="ecosystem-card">
-            <div class="ecosystem-card__icon">
-              <svg viewBox="0 0 64 64" fill="none" stroke="#3B82F6" stroke-width="2">
-                <rect x="14" y="12" width="36" height="40" rx="4"/>
-                <circle cx="32" cy="28" r="4" fill="#3B82F6" opacity="0.15"/>
-                <circle cx="24" cy="36" r="3" fill="#3B82F6" opacity="0.15"/>
-                <circle cx="38" cy="38" r="3" fill="#3B82F6" opacity="0.15"/>
-                <text x="32" y="50" text-anchor="middle" font-family="Inter" font-size="6" fill="#3B82F6" stroke="none">360%</text>
-              </svg>
-            </div>
-            <div class="ecosystem-card__step">Preserve</div>
-            <h3 class="ecosystem-card__title">GK Gel Desiccants</h3>
-            <p class="ecosystem-card__desc">Industrial desiccants absorb up to 360% of their weight in water, preventing condensation and moisture damage in containers.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== 10. SOCIAL PROOF & TRUST ========== -->
-    <section class="section" id="trust">
-      <div class="container">
-        <div class="section__header reveal">
-          <p class="section__eyebrow">Trusted By</p>
-          <h2 class="section__title">Backed by Science, Proven in the Field</h2>
-        </div>
-        <div class="trust-logos reveal">
-          <div class="trust-logo" aria-label="CE Certified">
-            <svg viewBox="0 0 100 50" fill="none">
-              <text x="50" y="35" text-anchor="middle" font-family="Inter" font-weight="700" font-size="28" fill="#A0A0A0">CE</text>
-            </svg>
-          </div>
-          <div class="trust-logo" aria-label="CSIC Heritage">
-            <svg viewBox="0 0 100 50" fill="none">
-              <text x="50" y="35" text-anchor="middle" font-family="Inter" font-weight="600" font-size="14" fill="#A0A0A0">CSIC</text>
-            </svg>
-          </div>
-          <div class="trust-logo" aria-label="Greenkeeper Iberia">
-            <svg viewBox="0 0 140 50" fill="none">
-              <text x="70" y="32" text-anchor="middle" font-family="Inter" font-weight="600" font-size="12" fill="#A0A0A0">GreenKeeper</text>
-            </svg>
-          </div>
-          <div class="trust-logo" aria-label="Fruit Logistica">
-            <svg viewBox="0 0 140 50" fill="none">
-              <text x="70" y="28" text-anchor="middle" font-family="Inter" font-weight="600" font-size="10" fill="#A0A0A0">FRUIT</text>
-              <text x="70" y="42" text-anchor="middle" font-family="Inter" font-weight="600" font-size="10" fill="#A0A0A0">LOGISTICA</text>
-            </svg>
-          </div>
-        </div>
-        <div class="trust-quotes reveal">
-          <div class="trust-quote">
-            <blockquote>"The combination of monitoring and ethylene control in one supplier has simplified our entire cold chain operation."</blockquote>
-            <cite>&mdash; European Fruit Importer</cite>
-          </div>
-          <div class="trust-quote">
-            <blockquote>"No software, no cloud login. Our port inspectors just plug it in and read the PDF. It's exactly what we needed."</blockquote>
-            <cite>&mdash; Quality Assurance Manager</cite>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== 11. PRODUCT VARIANTS & PRICING ========== -->
-    <section class="section section--alt" id="pricing">
-      <div class="container">
-        <div class="section__header reveal">
-          <p class="section__eyebrow">Get Started</p>
-          <h2 class="section__title">Choose Your Logger Duration</h2>
-          <p class="section__subtitle">Each variant is available in V1 (temperature only) or V2 (temperature + humidity). Volume pricing available for seasonal contracts.</p>
-        </div>
-        <div class="pricing-grid reveal">
-          <div class="pricing-card">
-            <div class="pricing-card__header">
-              <h3 class="pricing-card__title">60-Day</h3>
-              <p class="pricing-card__route">Mediterranean Routes</p>
-            </div>
-            <div class="pricing-card__body">
-              <ul class="pricing-card__features">
-                <li>Short-haul sea transport</li>
-                <li>V1 (Temp) or V2 (Temp + RH)</li>
-                <li>USB PDF + CSV report</li>
-                <li>Safe Mode included</li>
-                <li>Tamper-proof data</li>
-              </ul>
-            </div>
-            <div class="pricing-card__footer">
-              <a href="#contact" class="btn btn--outline btn--full">Request Quote</a>
-            </div>
-          </div>
-
-          <div class="pricing-card pricing-card--featured">
-            <div class="pricing-card__badge">Most Popular</div>
-            <div class="pricing-card__header">
-              <h3 class="pricing-card__title">90-Day</h3>
-              <p class="pricing-card__route">Atlantic &amp; Pacific Routes</p>
-            </div>
-            <div class="pricing-card__body">
-              <ul class="pricing-card__features">
-                <li>Standard sea transport</li>
-                <li>V1 (Temp) or V2 (Temp + RH)</li>
-                <li>USB PDF + CSV report</li>
-                <li>Safe Mode included</li>
-                <li>Tamper-proof data</li>
-              </ul>
-            </div>
-            <div class="pricing-card__footer">
-              <a href="#contact" class="btn btn--primary btn--full">Request Quote</a>
-            </div>
-          </div>
-
-          <div class="pricing-card">
-            <div class="pricing-card__header">
-              <h3 class="pricing-card__title">120-Day</h3>
-              <p class="pricing-card__route">Intercontinental Routes</p>
-            </div>
-            <div class="pricing-card__body">
-              <ul class="pricing-card__features">
-                <li>Long-haul &amp; multi-leg transport</li>
-                <li>V1 (Temp) or V2 (Temp + RH)</li>
-                <li>USB PDF + CSV report</li>
-                <li>Safe Mode included</li>
-                <li>Tamper-proof data</li>
-              </ul>
-            </div>
-            <div class="pricing-card__footer">
-              <a href="#contact" class="btn btn--outline btn--full">Request Quote</a>
-            </div>
-          </div>
-        </div>
-        <p class="pricing-note reveal">Request sample units to evaluate before committing to volume. Volume pricing available for seasonal contracts.</p>
-      </div>
-    </section>
-
-    <!-- ========== 12. CONTACT FORM + FOOTER ========== -->
-    <section class="section" id="contact">
-      <div class="container">
-        <div class="section__header reveal">
-          <p class="section__eyebrow">Contact</p>
-          <h2 class="section__title">Let's Talk Cold Chain</h2>
-          <p class="section__subtitle">Whether you need samples, pricing, or technical details&mdash;we're ready to help.</p>
-        </div>
-        <div class="contact-grid reveal">
-          <div class="contact-info">
-            <h3 class="contact-info__title">Kaptar Technologies</h3>
-            <p class="contact-info__text">Part of the Greenkeeper Iberia family. 35+ years of fruit transport science, now with cutting-edge monitoring technology.</p>
-            <div class="contact-info__items">
-              <div class="contact-info__item">
-                <svg viewBox="0 0 24 24" fill="none" stroke="#0D9488" stroke-width="2" class="contact-info__icon"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                <a href="mailto:info@kaptar.io">info@kaptar.io</a>
-              </div>
-              <div class="contact-info__item">
-                <svg viewBox="0 0 24 24" fill="none" stroke="#0D9488" stroke-width="2" class="contact-info__icon"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                <span>Spain, European Union</span>
-              </div>
-            </div>
-          </div>
-          <form class="contact-form" id="contactForm" novalidate>
-            <div class="contact-form__row">
-              <div class="contact-form__field">
-                <label for="name">Name <span class="required">*</span></label>
-                <input type="text" id="name" name="name" required placeholder="Your name">
-              </div>
-              <div class="contact-form__field">
-                <label for="company">Company <span class="required">*</span></label>
-                <input type="text" id="company" name="company" required placeholder="Company name">
-              </div>
-            </div>
-            <div class="contact-form__field">
-              <label for="email">Email <span class="required">*</span></label>
-              <input type="email" id="email" name="email" required placeholder="you@company.com">
-            </div>
-            <div class="contact-form__row">
-              <div class="contact-form__field">
-                <label for="route">Route / Use Case</label>
-                <select id="route" name="route">
-                  <option value="">Select a route type</option>
-                  <option value="mediterranean">Mediterranean (short-haul)</option>
-                  <option value="atlantic">Atlantic (medium-haul)</option>
-                  <option value="pacific">Pacific (long-haul)</option>
-                  <option value="intercontinental">Intercontinental (multi-leg)</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-              <div class="contact-form__field">
-                <label for="volume">Estimated Volume</label>
-                <select id="volume" name="volume">
-                  <option value="">Select volume range</option>
-                  <option value="samples">Sample units (1-10)</option>
-                  <option value="small">Small (10-100/month)</option>
-                  <option value="medium">Medium (100-1000/month)</option>
-                  <option value="large">Large (1000+/month)</option>
-                </select>
-              </div>
-            </div>
-            <div class="contact-form__field">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="4" placeholder="Tell us about your cold chain monitoring needs..."></textarea>
-            </div>
-            <button type="submit" class="btn btn--primary btn--lg btn--full">Send Message</button>
-            <div class="contact-form__status" id="formStatus" role="alert"></div>
-          </form>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- ========== FOOTER ========== -->
-  <footer class="footer">
+  <!-- Features Grid -->
+  <section class="section section--grey" id="features">
     <div class="container">
-      <div class="footer__grid">
-        <div class="footer__brand">
-          <svg class="footer__logo" viewBox="0 0 140 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="16" cy="16" r="14" fill="#0D9488"/>
-            <path d="M10 10 L16 16 L10 22" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M16 16 L22 10" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <text x="38" y="23" font-family="Inter, sans-serif" font-weight="700" font-size="20" fill="#FFFFFF">kaptar</text>
-          </svg>
-          <p class="footer__tagline">Cold chain monitoring built for fruit transport. Part of the Greenkeeper Iberia family.</p>
+      <div class="section__header">
+        <h2 class="section__title">Cold Chain Multi-Tool</h2>
+      </div>
+      
+      <div class="grid-3">
+        <!-- Feature 1 -->
+        <div class="card">
+          <div class="card__icon icon--software"></div>
+          <h3 class="card__title">No Software</h3>
+          <p class="card__desc">Native USB mass storage. Works on Mac, Windows, Linux, and Android via OTG. No drivers, no apps.</p>
         </div>
-        <div class="footer__column">
-          <h4 class="footer__heading">Product</h4>
-          <a href="#product" class="footer__link">Datalogger</a>
-          <a href="#features" class="footer__link">Features</a>
-          <a href="#technology" class="footer__link">Technology</a>
-          <a href="#pricing" class="footer__link">Pricing</a>
+
+        <!-- Feature 2 -->
+        <div class="card">
+          <div class="card__icon icon--precision"></div>
+          <h3 class="card__title">Laboratory Precision</h3>
+          <p class="card__desc">External 2.048V voltage reference for scientific-grade temperature accuracy across the full range.</p>
         </div>
-        <div class="footer__column">
-          <h4 class="footer__heading">Company</h4>
-          <a href="#ecosystem" class="footer__link">Ecosystem</a>
-          <a href="#trust" class="footer__link">Partners</a>
-          <a href="#contact" class="footer__link">Contact</a>
-        </div>
-        <div class="footer__column">
-          <h4 class="footer__heading">Legal</h4>
-          <a href="#" class="footer__link">Privacy Policy</a>
-          <a href="#" class="footer__link">Terms of Service</a>
-          <a href="#" class="footer__link">Cookie Policy</a>
+
+        <!-- Feature 3 -->
+        <div class="card">
+          <div class="card__icon icon--power"></div>
+          <h3 class="card__title">120 Days Battery</h3>
+          <p class="card__desc">Optimized STM32 STOP2 mode consumes &lt;1&mu;A, guaranteeing data integrity for long-haul shipments.</p>
         </div>
       </div>
-      <div class="footer__bottom">
-        <p>&copy; 2026 Kaptar Technologies. All rights reserved.</p>
+    </div>
+  </section>
+
+  <!-- Feature Highlight: Compatibility -->
+  <section class="section">
+    <div class="container feature-row">
+      <div class="feature-row__content">
+        <div class="badge-pill">Universal</div>
+        <h2 class="feature-row__title">Works with Everything</h2>
+        <p class="feature-row__desc">Kaptar appears as a standard USB drive. Connect it to a laptop, a tablet, or even a smartphone to instantly access the PDF report.</p>
+        
+        <div class="feature-list">
+            <div class="feature-item">
+                <span class="icon-check"></span> Automatic PDF Generation
+            </div>
+            <div class="feature-item">
+                <span class="icon-check"></span> CSV Data Included
+            </div>
+            <div class="feature-item">
+                <span class="icon-check"></span> Cross-Platform
+            </div>
+        </div>
+      </div>
+      <div class="feature-row__visual">
+        <div class="visual-placeholder">
+            <!-- Placeholder for render_angled.png -->
+            <div class="placeholder-label">Angled Device with Laptop/Phone</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Highlight: Controls -->
+  <section class="section section--grey">
+    <div class="container feature-row feature-row--reverse">
+      <div class="feature-row__content">
+        <h2 class="feature-row__title">Single Button Control</h2>
+        <p class="feature-row__desc">Designed for port operators and logistics personnel. One press to start. LED indicators provide instant status feedback without needing to plug it in.</p>
+        
+        <div class="control-diagram">
+           <!-- CSS-drawn diagram will go here or SVG -->
+           <div class="control-point">
+             <span class="cp-label">Start / Mark</span>
+             <span class="cp-line"></span>
+           </div>
+           <div class="control-point">
+             <span class="cp-label">Status LEDs</span>
+             <span class="cp-line"></span>
+           </div>
+        </div>
+      </div>
+      <div class="feature-row__visual">
+        <div class="visual-placeholder">
+            <!-- Placeholder for render_top_down.png -->
+            <div class="placeholder-label">Top-Down View</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dark Section: Security -->
+  <section class="section section--dark" id="specs">
+    <div class="container feature-row">
+      <div class="feature-row__content">
+        <h2 class="feature-row__title">Hardware-Level Security</h2>
+        <p class="feature-row__desc">Your data is your proof. Kaptar uses a read-only filesystem and STM32 Firewall technology to prevent tampering.</p>
+        
+        <div class="specs-grid">
+            <div class="spec-item">
+                <span class="spec-val">OTP</span>
+                <span class="spec-label">Serial Numbers</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-val">Read-Only</span>
+                <span class="spec-label">Filesystem</span>
+            </div>
+        </div>
+      </div>
+      <div class="feature-row__visual">
+         <div class="visual-placeholder dark-visual">
+            <!-- Placeholder for render_dark_glow.png -->
+            <div class="placeholder-label">Dark Mode / Glowing LEDs</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__brand">
+        <span class="footer__logo">Kaptar</span>
+        <p class="footer__tagline">Cold Chain Monitoring</p>
+      </div>
+      <div class="footer__links">
+        <a href="#product">Product</a>
+        <a href="#contact">Contact</a>
+        <a href="#">Privacy</a>
+      </div>
+      <div class="footer__socials">
+         <!-- Social icons -->
       </div>
     </div>
   </footer>
 
-  <!-- Scripts -->
-  <script src="js/main.js"></script>
 </body>
 </html>
